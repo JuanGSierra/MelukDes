@@ -41,12 +41,16 @@ public class MelukDes {
 
     }
 
-    public void leer(String arregloPalabras) {
-
-        String[] dividido = arregloPalabras.split("\\s+");
+    public static void main(String[] args) {
+        MelukDes prueba = new MelukDes();
+        String[] dividido = prueba.leerTxt().split("\\s+");
 
         for (int i = 0; i < dividido.length; i++) {
             //System.out.println(dividido[i]);
+            
+            
+            
+            
             if (dividido[i].length() >= 5) {
                 String dude = dividido[i].substring(0, 4);
                 if (dividido[i].startsWith("Loop")) {
@@ -60,11 +64,7 @@ public class MelukDes {
             }
 
         }
-    }
 
-    public static void main(String[] args) {
-        MelukDes prueba = new MelukDes();
-        prueba.leer(prueba.leerTxt());
     }
 
 }
