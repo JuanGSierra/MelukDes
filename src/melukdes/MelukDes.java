@@ -70,7 +70,6 @@ public class MelukDes {
                 if (dividido[i].equalsIgnoreCase("loop1")) {
                     System.out.println("coge mayusculas?");
                 }
-                System.out.println(dude);
                 
             } else {
                 
